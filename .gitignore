@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+
+# Builds and coverage
+dist/
+coverage/
+.vite/
+*.tsbuildinfo
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and runtime
+*.log
+npm-debug.log*
+.cache/
+tmp/
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Python/ML (future service)
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+*.pt
+*.pth
+
+# Generated repository data and uploads
+storage/
+uploads/
+repos/
+
+# Local context notes
+context/
+notes.txt

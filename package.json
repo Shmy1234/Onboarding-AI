@@ -1,0 +1,23 @@
+{
+  "name": "astro-onboarder",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n web,api -c cyan,magenta \"npm run dev -w @astro-onboarder/web\" \"npm run dev -w @astro-onboarder/api\"",
+    "dev:web": "npm run dev -w @astro-onboarder/web",
+    "dev:api": "npm run dev -w @astro-onboarder/api",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "latest"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
